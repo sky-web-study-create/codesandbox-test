@@ -197,3 +197,27 @@ const checkSum = (num1, num2) => {
 };
 
 console.log(checkSum(50, 40));
+
+/**
+ * 論理演算子
+ */
+const flag1 = true;
+const flag2 = false;
+
+if (flag1 || flag2) {
+  console.log("1か2はTrueになります");
+}
+
+if (flag1 && flag2) {
+  console.log("1も2もTrueになります");
+}
+
+// ||は左側がfalseなら右側を返す
+const number = null; //false判定
+const fee = number || "金額未設定です";
+console.log(fee);
+
+// &&は左側がTrueなら右側を返す
+const number2 = 100;
+const fee2 = number2 && "何か設定されました";
+console.log(fee2);
