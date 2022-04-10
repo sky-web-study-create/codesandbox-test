@@ -86,3 +86,20 @@ const func3 = (num1, num2) => {
 };
 // const func3 = (num1, num2) => num1 + num2;
 console.log(func3(10, 20));
+
+/**
+ * 分割代入
+ */
+const myProfile = {
+  name1: "じゃけぇ",
+  age1: 28
+};
+const { name1, age1 } = myProfile;
+const message3 = `名前は${name1}です。年齢は${age1}歳です。`;
+console.log(message3);
+
+const myProfile1 = ["じゃけぇ", 28];
+
+const [name2, age2] = myProfile1;
+const message4 = `名前は${name2}です。年齢は${age2}歳です。`;
+console.log(message4);
